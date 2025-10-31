@@ -13,6 +13,7 @@ once_cell      = { workspace = true }
 regex          = "1.8.1"
 serde          = { workspace = true, features = ["derive"] }
 serde_json     = { workspace = true }
+swc_atoms      = { workspace = true }
 
 swc_core = { workspace = true, features = [
   "common",
