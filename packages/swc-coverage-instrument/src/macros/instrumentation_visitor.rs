@@ -183,7 +183,7 @@ macro_rules! instrumentation_visitor {
             let (old, ignore_current) = self.on_enter(expr_stmt);
 
             if let Expr::Lit(Lit::Str(Str { value, .. })) = expr_stmt.expr.as_ref() {
-                let value: &str = &*value;
+                let value: &str = value.as_str().unwrap_or("");
 
                 if crate::macros::instrumentation_visitor::DIRECTIVES.contains(&value) {
                     self.on_exit(old);
