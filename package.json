@@ -30,7 +30,7 @@
   "scripts": {
     "prepublishOnly": "npm-run-all test && npm run build:plugin -- --release",
     "build:all": "npm-run-all build:customtransform build:instrument build:plugin",
-    "build:customtransform": "napi build --platform --cargo-cwd ./spec/swc-coverage-custom-transform",
+    "build:customtransform": "napi build --platform --cwd ./spec/swc-coverage-custom-transform",
     "build:instrument": "wasm-pack build spec/swc-coverage-instrument-wasm --target nodejs",
     "build:plugin": "cargo build -p swc-plugin-coverage --target wasm32-wasip1",
     "test:plugin": "npm-run-all build:all && mocha",
@@ -56,9 +56,9 @@
   },
   "homepage": "https://github.com/kwonoj/swc-coverage-instrument#readme",
   "devDependencies": {
-    "@napi-rs/cli": "^2.11.0",
+    "@napi-rs/cli": "^3.4.1",
     "@swc-node/register": "^1.10.10",
-    "@swc/core": "^1.13.1",
+    "@swc/core": "^1.15.0",
     "@taplo/cli": "^0.7.0",
     "@types/chai": "^4.3.3",
     "@types/js-yaml": "^4.0.5",

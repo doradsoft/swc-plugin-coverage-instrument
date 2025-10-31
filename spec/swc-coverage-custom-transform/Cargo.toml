@@ -7,22 +7,22 @@ version = "0.1.0"
 crate-type = ["cdylib", "rlib"]
 
 [build-dependencies]
-napi-build = "2.0.1"
+napi-build = "2.2.4"
 
 [dependencies]
 anyhow = "1.0.70"
 backtrace = "0.3.67"
-napi = { version = "2.12.5", default-features = false, features = [
+napi = { version = "3.4.0", default-features = false, features = [
   "napi3",
   "serde-json",
 ] }
-napi-derive = { version = "2.12.3", default-features = false, features = [
+napi-derive = { version = "3.3.0", default-features = false, features = [
   "type-def",
 ] }
 serde = { version = "1.0.203", features = ["derive"] }
 serde_json = { version = "1.0.120", features = ["unbounded_depth"] }
 swc-coverage-instrument = { version = "0.0.31", path = "../../packages/swc-coverage-instrument" }
-swc_core = { version = "31.1.0", features = [
+swc_core = { version = "46.0.3", features = [
   "common_concurrent",
   "ecma_transforms",
   "ecma_ast",
@@ -30,4 +30,4 @@ swc_core = { version = "31.1.0", features = [
   "ecma_visit",
   "base_node",
 ] }
-swc_error_reporters = { version = "15.0.1" }
+swc_error_reporters = { version = "18.0.0" }
