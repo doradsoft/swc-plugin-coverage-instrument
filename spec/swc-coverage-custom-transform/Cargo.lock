@@ -863,7 +863,7 @@ dependencies = [
 
 [[package]]
 name = "istanbul-oxide"
-version = "0.0.31"
+version = "0.0.32"
 dependencies = [
  "indexmap",
  "serde",
@@ -1686,7 +1686,7 @@ dependencies = [
 
 [[package]]
 name = "swc-coverage-instrument"
-version = "0.0.31"
+version = "0.0.32"
 dependencies = [
  "istanbul-oxide",
  "once_cell",
