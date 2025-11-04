@@ -5,7 +5,7 @@ edition     = "2021"
 license     = "MIT"
 name        = "swc-coverage-instrument"
 repository  = "https://github.com/kwonoj/swc-coverage-instrument"
-version     = "0.0.31"
+version     = "0.0.32"
 
 [dependencies]
 istanbul-oxide = { workspace = true }
@@ -13,6 +13,7 @@ once_cell      = { workspace = true }
 regex          = "1.8.1"
 serde          = { workspace = true, features = ["derive"] }
 serde_json     = { workspace = true }
+swc_atoms      = { workspace = true }
 
 swc_core = { workspace = true, features = [
   "common",

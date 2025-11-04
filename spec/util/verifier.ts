@@ -45,7 +45,7 @@ const instrumentSync = (
   };
 
   if (process.env.SWC_TRANSFORM_CUSTOM === "1") {
-    const { transformSync } = require("../../index");
+    const { transformSync } = require("../../spec/swc-coverage-custom-transform");
     return transformSync(
       code,
       true,
