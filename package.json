@@ -54,7 +54,7 @@
   "homepage": "https://github.com/kwonoj/swc-coverage-instrument#readme",
   "devDependencies": {
     "@napi-rs/cli": "^3.4.1",
-    "@swc-node/register": "^1.10.10",
+    "@swc-node/register": "^1.11.1",
     "@swc/core": "^1.15.0",
     "@taplo/cli": "^0.7.0",
     "@types/chai": "^4.3.3",
