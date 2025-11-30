@@ -3,6 +3,9 @@ edition = "2021"
 name    = "swc-coverage-instrument-wasm"
 version = "0.1.0"
 
+  [package.metadata.wasm-pack.profile.release]
+  wasm-opt = false
+
 [lib]
 crate-type = ["cdylib"]
 
